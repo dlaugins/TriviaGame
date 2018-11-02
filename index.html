@@ -8,63 +8,98 @@
     <title>Trivia</title>
 
     <!-- Our CSS style sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
     <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
 
 <body>
+    <div class="row" id="title">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <h1>National Park Trivia</h1>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row" id="timer">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <button id="start">Start</button>
+            <div id="display">Time left: 30</div>
+            <div id="correctAnswer">Number correct: </div>
+            <div id="incorrectAnswer">Number incorrect: </div>
+            <div id="missingAnswer">Number missing: </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <form id="trivia">
+        <div class="row" id="Quest">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <!-- <form id="trivia"> -->
+                <label for="Q1">
+                    <div id="Question"><h4>Bryce Canyon has the largest collection of________ in the world.</h4></div>
+                    <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Hiking Trails
+                    <input type="radio" class="clickMe" name="A1" value="1" id="Q1">Hoodoos
+                    <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Mountain Lions
+                    <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Blue Spruce
+                </label>
 
-    <div id="title">National Park Trivia
-        <button id="start">Start</button>
-        <div id="display">time left: 30</div>
-        <div id="correctAnswer">Number correct: </div>
-        <div id="incorrectAnswer">Number incorrect: </div>
-        <div id="missingAnswer">Number missing: </div>
-        <form id="trivia">
-            <label for="Q1">
-                <div id="Question">Bryce Canyon has the largest collection of________ in the world.</div>
-                <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Hiking Trails
-                <input type="radio" class="clickMe" name="A1" value="1" id="Q1">Hoodoos
-                <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Mountain Lions
-                <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Blue Spruce
-            </label>
+                <label for="Q2">
+                    <div id="Question"><h4>Which National Park is the oldest park east of the Mississippi River and the
+                        first time where the land was donated to the federal government?</h4></div>
+                    <input type="radio" class="clickMe" name="A2" value="0" id="Q2">The Everglades
+                    <input type="radio" class="clickMe" name="A2" value="0" id="Q2">Dry Tortugas
+                    <input type="radio" class="clickMe" name="A2" value="0" id="Q2">The Great Smokey Mountains
+                    <input type="radio" class="clickMe" name="A2" value="1" id="Q2">Acadia
+                </label>
 
-            <label for="Q2">
-                <div id="Question">Which National Park is the oldest park east of the Mississippi River and the
-                    first time where the land was donated to the federal government?</div>
-                <input type="radio" class="clickMe" name="A2" value="0" id="Q2">The Everglades
-                <input type="radio" class="clickMe" name="A2" value="0" id="Q2">Dry Tortugas
-                <input type="radio" class="clickMe" name="A2" value="0" id="Q2">The Great Smokey Mountains
-                <input type="radio" class="clickMe" name="A2" value="1" id="Q2">Acadia
-            </label>
+                <label for="Q3">
+                    <div id="Question"><h4>Which National Park has the only breeding population of Puma in the eastern
+                        U.S.?</h4></div>
+                    <input type="radio" class="clickMe" name="A3" value="1" id="Q3">The Everglades
+                    <input type="radio" class="clickMe" name="A3" value="0" id="Q3">Dry Tortugas
+                    <input type="radio" class="clickMe" name="A3" value="0" id="Q3">Shenandoah National Park
+                    <input type="radio" class="clickMe" name="A3" value="0" id="Q3">Acadia
+                </label>
 
-            <label for="Q3">
-                <div id="Question">Which National Park has the only breeding population of Puma in the eastern U.S.?</div>
-                <input type="radio" class="clickMe" name="A3" value="1" id="Q3">The Everglades
-                <input type="radio" class="clickMe" name="A3" value="0" id="Q3">Dry Tortugas
-                <input type="radio" class="clickMe" name="A3" value="0" id="Q3">Shenandoah National Park
-                <input type="radio" class="clickMe" name="A3" value="0" id="Q3">Acadia
-            </label>
+                <label for="Q4">
+                    <div id="Question"> <h4>Which National Park has the largest grove of the only grove of trees on the
+                        National Register of Historic Places?</h4></div>
+                    <input type="radio" class="clickMe" name="A4" value="0" id="Q4">Glacier National Park
+                    <input type="radio" class="clickMe" name="A4" value="0" id="Q4">Sequoia National Park
+                    <input type="radio" class="clickMe" name="A4" value="1" id="Q4">Great Sand Dunes National Park
+                    <input type="radio" class="clickMe" name="A4" value="0" id="Q4">Mount Ranier National Park
+                </label>
 
-            <label for="Q4">
-                <div id="Question"> Which National Park has the largest grove of the only grove of trees on the
-                    National
-                    Register of Historic Places?</div>
-                <input type="radio" class="clickMe" name="A4" value="0" id="Q4">Glacier National Park
-                <input type="radio" class="clickMe" name="A4" value="0" id="Q4">Sequoia National Park
-                <input type="radio" class="clickMe" name="A4" value="1" id="Q4">Great Sand Dunes National Park
-                <input type="radio" class="clickMe" name="A4" value="0" id="Q4">Mount Ranier National Park
-            </label>
+                <label for="Q5">
+                    <div id="Question"><h4>Which National Park is home to the world's tallest tree called the Hyperion.</h4></div>
+                    <input type="radio" class="clickMe" name="A5" value="0" id="Q5">Rockey Mountain National Park
+                    <input type="radio" class="clickMe" name="A5" value="1" id="Q5">Redwood National Park
+                    <input type="radio" class="clickMe" name="A5" value="0" id="Q5">Pinnacles National Park
+                    <input type="radio" class="clickMe" name="A5" value="0" id="Q5">Sequoia National Park
+                </label>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
 
-            <label for="Q5">
-                <div id="Question">Which National Park is home to the world's tallest tree called the Hyperion.</div>
-                <input type="radio" class="clickMe" name="A5" value="0" id="Q5">Rockey Mountain National Park
-                <input type="radio" class="clickMe" name="A5" value="1" id="Q5">Redwood National Park
-                <input type="radio" class="clickMe" name="A5" value="0" id="Q5">Pinnacles National Park
-                <input type="radio" class="clickMe" name="A5" value="0" id="Q5">Sequoia National Park
-            </label>
-        </form>
-        <button id="submit">Submit Answers</button>
+    </form>
+    <div class="row" id="sub">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-2">
+            <button id="submit">Submit Answers</button>
+        </div>
+        <div class="col-md-5">
+        </div>
     </div>
 
     <!-- jQuery -->
