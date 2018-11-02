@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Trivia</title>
+
+    <!-- Our CSS style sheet -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+
+    <div id="title">National Park Trivia
+        <button id="start">Start</button>
+        <div id="display">time left: 30</div>
+        <div id="correctAnswer">Number correct: </div>
+        <div id="incorrectAnswer">Number incorrect: </div>
+        <div id="missingAnswer">Number missing: </div>
+        <form id="trivia">
+            <label for="Q1">
+                <div id="Question">Bryce Canyon has the largest collection of________ in the world.</div>
+                <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Hiking Trails
+                <input type="radio" class="clickMe" name="A1" value="1" id="Q1">Hoodoos
+                <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Mountain Lions
+                <input type="radio" class="clickMe" name="A1" value="0" id="Q1">Blue Spruce
+            </label>
+
+            <label for="Q2">
+                <div id="Question">Which National Park is the oldest park east of the Mississippi River and the
+                    first time where the land was donated to the federal government?</div>
+                <input type="radio" class="clickMe" name="A2" value="0" id="Q2">The Everglades
+                <input type="radio" class="clickMe" name="A2" value="0" id="Q2">Dry Tortugas
+                <input type="radio" class="clickMe" name="A2" value="0" id="Q2">The Great Smokey Mountains
+                <input type="radio" class="clickMe" name="A2" value="1" id="Q2">Acadia
+            </label>
+
+            <label for="Q3">
+                <div id="Question">Which National Park has the only breeding population of Puma in the eastern U.S.?</div>
+                <input type="radio" class="clickMe" name="A3" correct="1" id="Q3">The Everglades
+                <input type="radio" class="clickMe" name="A3" correct="0" id="Q3">Dry Tortugas
+                <input type="radio" class="clickMe" name="A3" correct="0" id="Q3">Shenandoah National Park
+                <input type="radio" class="clickMe" name="A3" correct="0" id="Q3">Acadia
+            </label>
+
+            <label for="Q4">
+                <div id="Question"> Which National Park has the largest grove of the only grove of trees on the
+                    National
+                    Register of Historic Places?</div>
+                <input type="radio" class="clickMe" name="A4" correct="0" id="Q4">Glacier National Park
+                <input type="radio" class="clickMe" name="A4" correct="0" id="Q4">Sequoia National Park
+                <input type="radio" class="clickMe" name="A4" correct="1" id="Q4">Great Sand Dunes National Park
+                <input type="radio" class="clickMe" name="A4" correct="0" id="Q4">Mount Ranier National Park
+            </label>
+
+            <label for="Q5">
+                <div id="Question">Which National Park is home to the world's tallest tree called the Hyperion.</div>
+                <input type="radio" class="clickMe" name="A5" correct="0" id="Q5">Rockey Mountain National Park
+                <input type="radio" class="clickMe" name="A5" correct="1" id="Q5">Redwood National Park
+                <input type="radio" class="clickMe" name="A5" correct="0" id="Q5">Pinnacles National Park
+                <input type="radio" class="clickMe" name="A5" correct="0" id="Q5">Sequoia National Park
+            </label>
+        </form>
+        <button id="submit">Submit Answers</button>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
