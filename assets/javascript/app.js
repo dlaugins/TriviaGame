@@ -1,20 +1,12 @@
 
-// window.onload = function () {
-//     $("#buttons").on("click", stopwatch.start);
-// };
+
 var correctAnswer = 0;
 var incorrectAnswer = 0;
 var missingAnswer = 0;
 var timeLeft = 30;
 var gameStarted = false;
 var intervalId;
-// $(".clickMe").click(function () {
-//     if (gameStarted = "false") {
-//         intervalId = setInterval(stopwatch.count, 1000);
-//         game_started = true;
-//         time_left = 29;
-//     }
-// })
+
 function game_over() {
     correctAnswer = 0;
     incorrectAnswer = 0;
@@ -53,8 +45,8 @@ function game_over() {
 
 function timeRemaining() {
     timeLeft--
-    $("#display").html("time left: " + timeLeft);
-    console.log("time left: " + timeLeft);
+    $("#display").html("Time left: " + timeLeft);
+    console.log("Time left: " + timeLeft);
     if (timeLeft === 0) {
         game_over();
 
@@ -68,20 +60,7 @@ $(document).ready(function () {
         intervalId = setInterval(timeRemaining, 1000);
     });
 
-    // $("#question").on("click", function () {
-
-    //     var answer = $('input:checked').val(); //value
-
-    //     console.log(answer);
-
-    //     if (answer === 1) {
-    //         correctAnswer = + 1;
-    //         console.log("correct " + correctAnswe);
-    //     } else {
-    //         incorrectAnswer = + 1;
-    //         console.log("wrong " + incorrectAnswer);
-    //     }
-    // });
+    
 
     $("#submit").on("click", function () {
         game_over();
