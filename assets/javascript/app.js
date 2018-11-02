@@ -25,20 +25,30 @@ function game_over() {
     if (val === "1") correctAnswer++;
     else if (val === "0") incorrectAnswer++;
     else if (val === undefined) missingAnswer++;
-     // check Q2
-     val = $('#Q2:checked').val();
-     if (val === "1") correctAnswer++;
-     else if (val === "0") incorrectAnswer++;
-     else if (val === undefined) missingAnswer++;
-     val = $('#Q3:checked').val();
-     if (val === "1") correctAnswer++;
-     else if (val === "0") incorrectAnswer++;
-     else if (val === undefined) missingAnswer++;
+    // check Q2
+    val = $('#Q2:checked').val();
+    if (val === "1") correctAnswer++;
+    else if (val === "0") incorrectAnswer++;
+    else if (val === undefined) missingAnswer++;
+    val = $('#Q3:checked').val();
+    if (val === "1") correctAnswer++;
+    else if (val === "0") incorrectAnswer++;
+    else if (val === undefined) missingAnswer++;
+    val = $('#Q4:checked').val();
+    if (val === "1") correctAnswer++;
+    else if (val === "0") incorrectAnswer++;
+    else if (val === undefined) missingAnswer++;
+    val = $('#Q5:checked').val();
+    if (val === "1") correctAnswer++;
+    else if (val === "0") incorrectAnswer++;
+    else if (val === undefined) missingAnswer++;
     // clean up
     clearInterval(intervalId);
     $("#trivia").hide();
     // write to screen
     $("#correctAnswer").text("Number correct: " + correctAnswer);
+    $("#incorrectAnswer").text("Number incorrect: " + incorrectAnswer);
+    $("#missingAnswer").text("Number missing: " + missingAnswer);
 }
 
 function timeRemaining() {
